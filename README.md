@@ -1,4 +1,3 @@
-# presidential-precinct-map-2024
 # Presidential precinct data for the 2024 U.S. general election
 
 The New York Times scraped and standardized precinct-level election results from around the country, and joined this tabular data to GIS precinct data to create a detailed nationwide map. This map is still a work in progress as we work to collect and standardize data from more states and counties, and some places are not expected to publish precinct-level data. The data in this repo will be updated occasionally along with our map.
