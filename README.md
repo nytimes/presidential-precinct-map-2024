@@ -11,7 +11,7 @@ Each precinct polygon has the following properties:
 - `votes_rep`: votes received by Donald J. Trump
 - `votes_total`: total votes in the precinct, including for third-party candidates and write-ins when available
 - `pct_dem_lead`: (votes_dem - votes_rep) / (votes_total), with four significant digits (e.g., -0.2134)
-- `official_boundary`: `true` if the precinct’s shape came from a file that was provided by the state or county, `false`if the precinct boundary was estimated (see caveats below)
+- `official_boundary`: `true` if the precinct’s shape came from a file that was provided by the state or county, `false` if the precinct boundary was estimated (see caveats below)
 
 The 2020 election results that appear in our interactive map are primarily from the [Voting and Election Science Team](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/K7760H) (see additional data notes below for exceptions.) Shift in margin from 2020 was calculated by reallocating 2020 precinct results into 2024 precinct shapes [using this method](https://medium.com/@DeniseDSLu/dasymetric-reaggregation-using-mapshaper-218e87babaa3). Some 2020 data is omitted from our map because of methodological differences between the 2020 and 2024 data sets.
 
