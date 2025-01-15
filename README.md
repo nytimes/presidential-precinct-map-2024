@@ -104,7 +104,7 @@ One of the most common causes of precinct data being unusable is “countywide�
 |Vermont|⚠️|results are shown at the township level|official boundaries
 |[Virginia](https://enr.elections.virginia.gov/results/public/Virginia/elections/2024NovemberGeneral)|✅|see notes below|official boundaries
 |[Washington](https://results.vote.wa.gov/results/20241105/export.html)|✅||official boundaries
-|[West Virginia](https://results.enr.clarityelections.com/WV/122766/web.345435/#/reporting)|⚠️|data for some counties has not yet been collected||official boundaries
+|[West Virginia](https://results.enr.clarityelections.com/WV/122766/web.345435/#/reporting)|✅|||official boundaries
 |[Wisconsin](https://github.com/jdjohn215/wisc-election-night-data/tree/main/2024-nov/wec)|✅||official boundaries
 |[Wyoming](https://sos.wyo.gov/Elections/Docs/2024/2024GeneralResults.aspx)|❌|data is available but has not yet been collected|N/A
 
