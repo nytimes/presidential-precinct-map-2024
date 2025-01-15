@@ -20,7 +20,7 @@ Please contact <electionsdata@nytimes.com> if you have any questions about data 
 
 ## General caveats
 
-- We used official precinct boundaries provided by states or counties for most of the places in our map. When official boundaries were not available, we created approximate precinct shapes using points in the [voter files by L2](https://www.l2-data.com), a nonpartisan voter data vendor. This results in _generally accurate_ precinct boundaries, but the shapes can be more rough in no- or very-low-population places.
+- We used official precinct boundaries provided by states or counties for most of the places in our map. When official boundaries were not available, we created approximate precinct shapes using points in the [voter files by L2](https://www.l2-data.com), a nonpartisan voter data vendor. This results in _generally accurate_ precinct boundaries, but the shapes can be more approximate in no- or very-low-population places.
   - Because of this, spatially joining the precincts in our GeoJSON without official boundaries is likely to yield less-than-ideal output.
 - In the following states, precinct results in some counties were not included in the map because these counties reported absentee votes at the countywide level rather than at the precinct level: Idaho, Michigan, Missouri, North Carolina, Oklahoma and South Dakota.
 - Some of the results we gathered are slightly incomplete:
