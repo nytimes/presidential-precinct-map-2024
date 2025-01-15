@@ -100,11 +100,11 @@ One of the most common causes of precinct data being unusable is “countywide�
 |[South Dakota](https://electionresults.sd.gov/resultsSW.aspx?type=SWR&map=CTY)|❌|data is available but has not yet been collected. results cannot be shown for some counties where absentee votes are reported countywide|N/A
 |[Tennessee](https://sos.tn.gov/elections/results)|✅||official boundaries
 |Texas|⚠️|data for some counties has not yet been collected|some generated boundaries
-|[Utah](https://electionresults.utah.gov/results/public/utah/elections/general11052024/ballot-items/88e40000-968a-0c37-b0b0-08dce9374078)|✅||
+|[Utah](https://electionresults.utah.gov/results/public/utah/elections/general11052024/ballot-items/88e40000-968a-0c37-b0b0-08dce9374078)|✅||official boundaries
 |Vermont|⚠️|results are shown at the township level|official boundaries
 |[Virginia](https://enr.elections.virginia.gov/results/public/Virginia/elections/2024NovemberGeneral)|✅|see notes below|official boundaries
 |[Washington](https://results.vote.wa.gov/results/20241105/export.html)|✅||official boundaries
-|[West Virginia](https://results.enr.clarityelections.com/WV/122766/web.345435/#/reporting)|✅|||official boundaries
+|[West Virginia](https://results.enr.clarityelections.com/WV/122766/web.345435/#/reporting)|✅||official boundaries
 |[Wisconsin](https://github.com/jdjohn215/wisc-election-night-data/tree/main/2024-nov/wec)|✅||official boundaries
 |[Wyoming](https://sos.wyo.gov/Elections/Docs/2024/2024GeneralResults.aspx)|❌|data is available but has not yet been collected|N/A
 
