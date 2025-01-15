@@ -111,8 +111,10 @@ One of the most common causes of precinct data being unusable is “countywide�
 ## Additional data notes
 
 - In Virginia, provisional votes for each candidate were reported at the county level rather than at the precinct level. The Times allocated these votes to precincts according to each candidate’s share of the precinct-level reported vote.
-- In Michigan, the city of Detroit reports its absentee votes in counting boards, which often span multiple precincts. For the 2024 data, The Times obtained a list of precincts that correspond to each counting board from the Detroit city clerk, and precinct results were aggregated into counting boards. For 2020, the list of precincts that correspond to each counting board was obtained from OpenElections. In Ionia County, votes were reported at the township level rather than at the precinct level, and that is what is shown on the map.
-- In Arkansas, precinct results for Phillips County could not be joined to geographic shapes. 
+- In Michigan, the city of Detroit reports its absentee votes in counting boards, which often span multiple precincts. For the 2024 data, The Times obtained a list of precincts that correspond to each counting board from the Detroit city clerk, and precinct results were aggregated into counting boards. For 2020 data, The Times obtained precinct results from the Wayne County Clerk and aggregated Detroit’s votes into counting boards using a list of precincts from [OpenElections](https://github.com/openelections/openelections-sources-mi/tree/master/2020). In Ionia County, votes were reported at the township level rather than at the precinct level, and that is what is shown on the map.
+- In Arkansas, precinct results for Phillips County could not be joined to geographic shapes.
+- The 2020 election results for New York were provided by [Benjamin J. Rosenblatt](https://www.benjrosenblatt.com).  
+
 
 
 ## Credits
