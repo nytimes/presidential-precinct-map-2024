@@ -2,7 +2,9 @@
 
 The New York Times collected and standardized precinct-level election results from around the country, and joined this tabular data to G.I.S. precinct data to create a [detailed nationwide map](https://www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html). This map is still a work in progress as we continue to collect and standardize data from more states and counties, and some places are not expected to publish precinct-level data. The data in this repo will be updated occasionally along with our map.
 
-The [TopoJSON](https://github.com/topojson/topojson) data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz)
+**The [TopoJSON](https://github.com/topojson/topojson) data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz)**
+
+You can open the file using software that can handle geographic data formats, such as [Mapshaper](https://mapshaper.org/), the [sf library in R](https://r-spatial.github.io/sf/), the [GeoPandas library in R](https://geopandas.org/en/stable/) or [QGIS](https://www.qgis.org/).  
 
 Each precinct polygon has the following properties:
 
@@ -21,13 +23,13 @@ Please contact <electionsdata@nytimes.com> if you have any questions about data 
 ## General caveats
 
 - We used official precinct boundaries provided by states or counties for most of the places in our map. When official boundaries were not available, we created approximate precinct shapes using points in the [voter files by L2](https://www.l2-data.com), a nonpartisan voter data vendor. This results in _generally accurate_ precinct boundaries, but the shapes can be more approximate in no- or very-low-population places.
-  - Because of this, spatially joining the precincts in our GeoJSON without official boundaries is likely to yield less-than-ideal output.
+  - Because of this, spatially joining the precincts in our TopoJSON without official boundaries is likely to yield less-than-ideal output.
 - In the following states, precinct results in some counties were not included in the map because these counties reported absentee votes at the countywide level rather than at the precinct level: Idaho, Michigan, Missouri, North Carolina, Oklahoma and South Dakota.
 - Some of the results we gathered are slightly incomplete:
   - Wherever write-ins are not reported by the data source, our vote totals are marginally different.
-  - A very small portion of the tabular precinct results (roughly 0.1%) could not be joined to the precinct boundaries, and thus these results are not present in the GeoJSON.
+  - A very small portion of the tabular precinct results (roughly 0.1%) could not be joined to the precinct boundaries, and thus these results are not present in the TopoJSON.
 - Our map uses township-level data in much of New England. We will replace it with precinct-level data as it becomes available.
-- A small number of precincts contain no votes or have so few voters that their vote data is redacted by officials. Those polygons are excluded from the GeoJSON.
+- A small number of precincts contain no votes or have so few voters that their vote data is redacted by officials. Those polygons are excluded from the TopoJSON.
 
 
 ## State-by-state data availability and caveats
@@ -38,7 +40,7 @@ Please contact <electionsdata@nytimes.com> if you have any questions about data 
 |⚠️|have gathered data, but doesn't cover entire state or has other significant caveats|
 |❌|precinct data not usable|
 
-One of the most common causes of precinct data being unusable is “countywide” tabulations. This occurs when a county reports, say, all of its absentee ballots together as a single total (instead of precinct by precinct); because we can’t attribute those ballots to specific precincts, that means that all precincts in the county will be missing an indeterminate number of votes, and therefore can’t be reliably mapped. In these cases, we drop the entire county from our GeoJSON.
+One of the most common causes of precinct data being unusable is “countywide” tabulations. This occurs when a county reports, say, all of its absentee ballots together as a single total (instead of precinct by precinct); because we can’t attribute those ballots to specific precincts, that means that all precincts in the county will be missing an indeterminate number of votes, and therefore can’t be reliably mapped. In these cases, we drop the entire county from our TopoJSON.
 
 |                                                                                    state                                                                                     | availability | description                                                                                           | shapefile sourcing                                       |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------: | :---------------------------------------------------------------------------------------------------- | :------------------------------------------------------- |
