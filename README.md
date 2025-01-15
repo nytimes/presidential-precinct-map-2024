@@ -7,15 +7,10 @@ The TopoJSON data set can be downloaded here: [https://int.nyt.com/newsgraphics/
 Each precinct polygon has the following properties:
 
 - `GEOID`: unique identifier for the precinct, formed from the five-digit county F.I.P.S. code followed by the precinct name/ID (e.g., 30003-08 or 39091-WEST MANSFIELD)
-
 - `votes_dem`: votes received by Kamala Harris
-
 - `votes_rep`: votes received by Donald J. Trump
-
 - `votes_total`: total votes in the precinct, including for third-party candidates and write-ins when available
-
 - `pct_dem_lead`: (votes_dem - votes_rep) / (votes_total), with four significant digits (e.g., -0.2134)
-
 - `official_boundary`: `true` if the precinct’s shape came from a file that was provided by the state or county, `false`if the precinct boundary was estimated (see caveats below)
 
 The 2020 election results that appear in our interactive map are primarily from the [Voting and Election Science Team](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/K7760H) (see additional data notes below for exceptions.) Shift in margin from 2020 was calculated by reallocating 2020 precinct results into 2024 precinct shapes [using this method](https://medium.com/@DeniseDSLu/dasymetric-reaggregation-using-mapshaper-218e87babaa3). Some 2020 data is omitted from our map because of methodological differences between the 2020 and 2024 data sets.
@@ -26,19 +21,12 @@ Please contact <electionsdata@nytimes.com> if you have any questions about data 
 ## General caveats
 
 - We used official precinct boundaries provided by states or counties for most of the places in our map. When official boundaries were not available, we created approximate precinct shapes using points in the [voter files by L2](https://www.l2-data.com), a nonpartisan voter data vendor. This results in _generally accurate_ precinct boundaries, but the shapes can be more rough in no- or very-low-population places.
-
   - Because of this, spatially joining the precincts in our GeoJSON without official boundaries is likely to yield less-than-ideal output.
-
 - In the following states, precinct results in some counties were not included in the map because these counties reported absentee votes at the countywide level rather than at the precinct level: Idaho, Michigan, Missouri, North Carolina, Oklahoma and South Dakota.
-
 - Some of the results we gathered are slightly incomplete:
-
   - Wherever write-ins are not reported by the data source, our vote totals are marginally different.
-
   - A very small portion of the tabular precinct results (roughly 0.1%) could not be joined to the precinct boundaries, and thus these results are not present in the GeoJSON.
-
 - Our map uses township-level data in much of New England. We will replace it with precinct-level data as it becomes available.
-
 - A small number of precincts contain no votes or have so few voters that their vote data is redacted by officials. Those polygons are excluded from the GeoJSON.
 
 
