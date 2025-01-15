@@ -2,7 +2,7 @@
 
 The New York Times collected and standardized precinct-level election results from around the country, and joined this tabular data to G.I.S. precinct data to create a [detailed nationwide map](https://www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html). This map is still a work in progress as we continue to collect and standardize data from more states and counties, and some places are not expected to publish precinct-level data. The data in this repo will be updated occasionally along with our map.
 
-The TopoJSON data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz)
+The [TopoJSON](https://github.com/topojson/topojson) data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz)
 
 Each precinct polygon has the following properties:
 
