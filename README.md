@@ -32,8 +32,6 @@ Please contact <electionsdata@nytimes.com> if you have any questions about data 
 
 ## State-by-state data availability and caveats
 
-One of the most common causes of precinct data being unusable is “countywide” tabulations. This occurs when a county reports, say, all of its absentee ballots together as a single total (instead of precinct by precinct); because we can’t attribute those ballots to specific precincts, that means that all precincts in the county will be missing an indeterminate number of votes, and therefore can’t be reliably mapped. In these cases, we drop the entire county from our GeoJSON.
-
 |symbol|meaning|
 |:----:|:------|
 |✅|have gathered data, no significant caveats|
