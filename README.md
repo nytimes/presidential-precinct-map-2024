@@ -4,7 +4,7 @@ The New York Times collected and standardized precinct-level election results fr
 
 **The [TopoJSON](https://github.com/topojson/topojson) data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz)**
 
-You can open the file using software that can handle geographic data formats, such as [Mapshaper](https://mapshaper.org/), the [sf library in R](https://r-spatial.github.io/sf/), the [GeoPandas library in R](https://geopandas.org/en/stable/) or [QGIS](https://www.qgis.org/).  
+You can open the file using software that can handle geographic data formats, such as [Mapshaper](https://mapshaper.org/), the [sf library in R](https://r-spatial.github.io/sf/), the [GeoPandas library in Python](https://geopandas.org/en/stable/), or [QGIS](https://www.qgis.org/).
 
 Each precinct polygon has the following properties:
 
