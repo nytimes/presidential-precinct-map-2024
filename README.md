@@ -114,3 +114,9 @@ One of the most common causes of precinct data being unusable is â€œcountywideâ€
 - Precinct results and boundaries for Wisconsin provided by [John D. Johnson](https://johndjohnson.info).
 - [Josh Metcalf](https://x.com/josh_metcalf) provided assistance in matching boundaries for Nevada, New Hampshire, Mississippi, Vermont and Wyoming.
 - Township election results for Connecticut, Maine, New Hampshire, Rhode Island and Vermont provided by The Associated Press.
+
+## Citation
+
+If you use this data, please cite it and link to [the published map](https://www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html). Citation suggestion below:
+
+"2024 Precinct-Level Election Results." *New York Times*, www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html. Accessed [date accessed].
