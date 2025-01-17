@@ -3,12 +3,19 @@
 The New York Times collected and standardized precinct-level election results from around the country, and joined this tabular data to G.I.S. precinct data to create a [detailed nationwide map](https://www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html). This map is still a work in progress as we continue to collect and standardize data from more states and counties, and some places are not expected to publish precinct-level data. The data linked to on this page will be updated occasionally along with our map.
 
 ## What's on this page  
-[General caveats](#general-caveats)   
 [National download links](#national-download-links)   
-[State by state availability, download links, and caveats](#state-by-state-availability-download-links-and-caveats)   
-[Data structure and usage guide](#data-structure-and-usage-guide)   
+[General caveats](#general-caveats)   
+[State by state download links and caveats](#state-by-state-download-links-and-caveats)   
+[Data dictionary](#data-dictionary)   
+[How to open these files](#how-to-open-these-files)   
 [Credits](#credits)   
 [Citation](#citation)   
+
+## National download links
+
+**The national TopoJSON data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz)**
+
+**The national CSV data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.csv.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.csv.gz)**
 
 ## General caveats
 
@@ -20,17 +27,11 @@ Please contact <electionsdata@nytimes.com> if you have any questions about data 
 - In the following states, precinct results in some counties were not included in the map because these counties reported absentee votes at the countywide level rather than at the precinct level: Idaho, Michigan, Missouri, North Carolina, Oklahoma and South Dakota.
 - Some of the results we gathered are slightly incomplete:
   - Wherever write-ins are not reported by the data source, our vote totals are marginally different.
-  - A very small portion of the tabular precinct results (roughly 0.1%) could not be joined to the precinct boundaries, and thus these results are not present in the TopoJSON.
+  - A very small portion of the tabular precinct results (roughly 0.1%) could not be joined to the precinct boundaries, and thus these results are not present in the data.
 - Our map uses township-level data in much of New England. We will replace it with precinct-level data as it becomes available.
 - A small number of precincts contain no votes or have so few voters that their vote data is redacted by officials. Those precincts are excluded from the data.
 
-## National download links
-
-**The national [TopoJSON](https://github.com/topojson/topojson) data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz)**
-
-**The national CSV data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.csv.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.csv.gz)**
-
-## State by state availability, download links, and caveats
+## State by state download links and caveats
 
 |symbol|meaning|
 |:----:|:------|
@@ -40,7 +41,7 @@ Please contact <electionsdata@nytimes.com> if you have any questions about data 
 
 One of the most common causes of precinct data being unusable is “countywide” tabulations. This occurs when a county reports, say, all of its absentee ballots together as a single total (instead of precinct by precinct); because we can’t attribute those ballots to specific precincts, that means that all precincts in the county will be missing an indeterminate number of votes, and therefore can’t be reliably mapped. In these cases, we drop the entire county from our data.
 
-| state                                                                                                                                    | availability | data download                                                                                                                                                                                                                                                                                                                                         | description                                                                                                                                               | shapefile sourcing                                       |
+| state                                                                                                                                    | availability | download links                                                                                                                                                                                                                                                                                                                                        | description                                                                                                                                               | shapefile sourcing                                       |
 | :--------------------------------------------------------------------------------------------------------------------------------------- | :----------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- |
 | Alabama                                                                                                                                  |       ❌      |                                                                                                                                                                                                                                                                                                                                                       | absentee and provisional votes are reported countywide                                                                                                    | N/A                                                      |
 | Alaska                                                                                                                                   |       ❌      |                                                                                                                                                                                                                                                                                                                                                       | absentee, early and provisional votes are reported district-wide                                                                                          | N/A                                                      |
@@ -101,9 +102,9 @@ One of the most common causes of precinct data being unusable is “countywide�
 - In Arkansas, precinct results for Phillips County could not be joined to geographic shapes.
 - The 2020 election results for New York were provided by [Benjamin J. Rosenblatt](https://www.benjrosenblatt.com).
 
-## Data structure and usage guide
+## Data dictionary
 
-Each precinct has the following properties:
+Each precinct in the data has the following properties:
 
 - `state`: state postal abbreviation
 - `GEOID`: unique identifier for the precinct, formed from the five-digit county F.I.P.S. code followed by the precinct name/ID (e.g., 30003-08 or 39091-WEST MANSFIELD)
@@ -113,9 +114,11 @@ Each precinct has the following properties:
 - `pct_dem_lead`: (votes_dem - votes_rep) / (votes_total), with four significant digits (e.g., -0.2134)
 - `official_boundary`: `true` if the precinct’s shape came from a file that was provided by the state or county, `false` if the precinct boundary was estimated (see caveats below)
 
-You can open the TopoJSON and GeoJSON files using software that can handle geographic data formats, such as [Mapshaper](https://mapshaper.org/), the [sf library in R](https://r-spatial.github.io/sf/), the [GeoPandas library in Python](https://geopandas.org/en/stable/), or [QGIS](https://www.qgis.org/).
+## How to open these files
 
-You can open the CSV files using any software that can handle tabular data formats, such as the [tidyverse collection in R](https://www.tidyverse.org/), the [pandas library in Python](https://pandas.pydata.org/docs/), or [Excel](https://support.microsoft.com/en-us/excel). [Mapshaper](https://mapshaper.org/) also supports tabular data.
+You can open the [TopoJSON](https://github.com/topojson/topojson) and GeoJSON files using software that can handle geographic data formats, such as [Mapshaper](https://mapshaper.org/), the [sf library in R](https://r-spatial.github.io/sf/), the [GeoPandas library in Python](https://geopandas.org/en/stable/), or [QGIS](https://www.qgis.org/). The TopoJSON and GeoJSON files we provide are broadly interchangeable, but the TopoJSON files are, on average, much smaller.
+
+You can open the CSV files using software that can handle tabular data formats, such as the [tidyverse collection in R](https://www.tidyverse.org/), the [pandas library in Python](https://pandas.pydata.org/docs/), or [Excel](https://support.microsoft.com/en-us/excel). [Mapshaper](https://mapshaper.org/) also supports tabular data.
 
 ## Credits
 
