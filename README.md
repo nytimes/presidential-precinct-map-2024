@@ -3,19 +3,19 @@
 The New York Times collected and standardized precinct-level election results from around the country, and joined this tabular data to G.I.S. precinct data to create a [detailed nationwide map](https://www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html). This map is still a work in progress as we continue to collect and standardize data from more states and counties, and some places are not expected to publish precinct-level data. The data linked to on this page will be updated occasionally along with our map.
 
 ## What's on this page  
-[National download links](#national-download-links)   
+[Download national data](#download-national-data)   
 [General caveats](#general-caveats)   
-[State by state download links and caveats](#state-by-state-download-links-and-caveats)   
+[State by state data and caveats](#state-by-state-data-and-caveats)   
 [Data dictionary](#data-dictionary)   
 [How to open these files](#how-to-open-these-files)   
 [Credits](#credits)   
 [Citation](#citation)   
 
-## National download links
+## Download national data
 
-**The national TopoJSON data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz)**
+The national TopoJSON data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.topojson.gz)
 
-**The national CSV data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.csv.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.csv.gz)**
+The national CSV data set can be downloaded here: [https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.csv.gz](https://int.nyt.com/newsgraphics/elections/map-data/2024/national/precincts-with-results.csv.gz)
 
 ## General caveats
 
@@ -31,7 +31,7 @@ Please contact <electionsdata@nytimes.com> if you have any questions about data 
 - Our map uses township-level data in much of New England. We will replace it with precinct-level data as it becomes available.
 - A small number of precincts contain no votes or have so few voters that their vote data is redacted by officials. Those precincts are excluded from the data.
 
-## State by state download links and caveats
+## State by state data and caveats
 
 |symbol|meaning|
 |:----:|:------|
@@ -41,7 +41,7 @@ Please contact <electionsdata@nytimes.com> if you have any questions about data 
 
 One of the most common causes of precinct data being unusable is “countywide” tabulations. This occurs when a county reports, say, all of its absentee ballots together as a single total (instead of precinct by precinct); because we can’t attribute those ballots to specific precincts, that means that all precincts in the county will be missing an indeterminate number of votes, and therefore can’t be reliably mapped. In these cases, we drop the entire county from our data.
 
-| state                                                                                                                                    | availability | download links                                                                                                                                                                                                                                                                                                                                        | description                                                                                                                                               | shapefile sourcing                                       |
+| state                                                                                                                                    | availability | data                                                                                                                                                                                                                                                                                                                                         | description                                                                                                                                               | shapefile sourcing                                       |
 | :--------------------------------------------------------------------------------------------------------------------------------------- | :----------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- |
 | Alabama                                                                                                                                  |       ❌      |                                                                                                                                                                                                                                                                                                                                                       | absentee and provisional votes are reported countywide                                                                                                    | N/A                                                      |
 | Alaska                                                                                                                                   |       ❌      |                                                                                                                                                                                                                                                                                                                                                       | absentee, early and provisional votes are reported district-wide                                                                                          | N/A                                                      |
