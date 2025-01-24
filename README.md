@@ -127,7 +127,7 @@ You can open the CSV files using software that can handle tabular data formats, 
 - Precinct results for several counties in Michigan provided by [Derek Willis](https://thescoop.org) and [the OpenElections team](https://github.com/openelections/openelections-data-mi/graphs/contributors).
 - Precinct results and boundaries for most of New York provided by [Benjamin J. Rosenblatt](https://www.benjrosenblatt.com).
 - Precinct results and boundaries for Wisconsin provided by [John D. Johnson](https://johndjohnson.info).
-- [Josh Metcalf](https://x.com/josh_metcalf) provided assistance in matching boundaries for Nevada, New Hampshire, Mississippi, Vermont and Wyoming.
+- [Josh Metcalf](https://x.com/josh_metcalf) provided precinct results and boundaries for Wyoming, and assistance in matching boundaries for Nevada, New Hampshire, Mississippi and Vermont.
 - Township election results for Connecticut, Maine, New Hampshire, Rhode Island and Vermont provided by The Associated Press.
 
 ## Citation
