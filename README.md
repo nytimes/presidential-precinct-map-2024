@@ -101,6 +101,7 @@ One of the most common causes of precinct data being unusable is “countywide�
 - In Michigan, the city of Detroit reports its absentee votes in counting boards, which often span multiple precincts. For the 2024 data, The Times obtained a list of precincts that correspond to each counting board from the Detroit city clerk, and precinct results were aggregated into counting boards. For 2020 data, The Times obtained precinct results from the Wayne County Clerk and aggregated Detroit’s votes into counting boards using a list of precincts from [OpenElections](https://github.com/openelections/openelections-sources-mi/tree/master/2020). In Ionia County, votes were reported at the township level rather than at the precinct level, and that is what is shown on the map.
 - In Arkansas, precinct results for Phillips County could not be joined to geographic shapes.
 - The 2020 election results for New York were provided by [Benjamin J. Rosenblatt](https://www.benjrosenblatt.com).
+- Louisiana reports absentee and provisional results by parish, not precinct. Parish-level absentee and provisional results were allocated to precincts using the precinct’s early vote turnout, as reported by the state, and a New York Times estimate of each candidate’s early voteshare in the precinct. Each precinct’s voteshare for early voting was modeled by adjusting Election Day voteshare in the parish according to typical early vote patterns and to sum up to tabulated parish results.
 
 ## Data dictionary
 
