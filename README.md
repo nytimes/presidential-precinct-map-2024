@@ -132,7 +132,7 @@ You can open the CSV files using software that can handle tabular data formats, 
 - Precinct boundaries for most of Ohio provided by [Andrew Green](https://x.com/OPoliticsguru).
 - Precinct results and boundaries for most of Pennsylvania provided by the Pennsylvania House of Representatives. Additional assistance by [Isaac Kaufer](https://x.com/DemHackMaps).
 - Precinct results and boundaries for Wisconsin provided by [John D. Johnson](https://johndjohnson.info).
-- [Josh Metcalf](https://x.com/josh_metcalf) provided precinct results and boundaries for Wyoming, and assistance in matching boundaries for Nevada, New Hampshire, Mississippi and Vermont.
+- [Josh Metcalf](https://x.com/josh_metcalf) provided precinct results and boundaries for Wyoming, and precinct boundaries, including research, for Colorado, Nevada, New Hampshire, Mississippi and Vermont.
 - Township election results for Connecticut, Maine, New Hampshire, Rhode Island and Vermont provided by The Associated Press.
 
 ## Citation
