@@ -131,7 +131,7 @@ You can open the CSV files using software that can handle tabular data formats, 
 - Precinct boundaries for several counties in Missouri provided by [Redistricting Data Hub](https://redistrictingdatahub.org/).
 - Precinct results and boundaries for New York provided by [Benjamin J. Rosenblatt](https://www.benjrosenblatt.com).
 - Precinct boundaries for most of Ohio provided by [Andrew Green](https://x.com/OPoliticsguru) and [Redistricting Data Hub](https://redistrictingdatahub.org/).
-- Precinct boundaries for some counties in Oregon provided by Jude Grifka. Additional assistance by [Mark Frieseon/Oregon Live](https://projects.oregonlive.com/data-points/election_24/general/prezprec.html).
+- Precinct boundaries for some counties in Oregon provided by Jude Grifka. Additional assistance by [Mark Friesen/Oregon Live](https://projects.oregonlive.com/data-points/election_24/general/prezprec.html).
 - Precinct results and boundaries for most of Pennsylvania provided by the Pennsylvania House of Representatives. Additional assistance by [Isaac Kaufer](https://x.com/DemHackMaps).
 - Precinct results and boundaries for most of Texas provided by [Christopher Adams/KXAN News](https://www.kxan.com/news/your-local-election-hq/2024-presidential-precinct-results/).
 - Precinct results and boundaries for Wisconsin provided by [John D. Johnson](https://johndjohnson.info).
